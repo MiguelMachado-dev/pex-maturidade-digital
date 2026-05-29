@@ -4,6 +4,10 @@ node_modules
 # production
 dist
 
+# local project docs
+plano_implementacao_pex_maturidade_digital.md
+tarefas_implementacao_pex_maturidade_digital.md
+
 # TypeScript
 tsconfig*.tsbuildinfo
 
