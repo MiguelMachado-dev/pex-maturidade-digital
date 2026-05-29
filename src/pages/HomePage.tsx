@@ -9,6 +9,12 @@ const benefits = [
   'Priorize melhorias simples e viáveis para a rotina.',
 ] as const;
 
+const quickMetrics = [
+  { value: '30', label: 'perguntas guiadas' },
+  { value: '7', label: 'áreas do negócio' },
+  { value: '90', label: 'pontos possíveis' },
+] as const;
+
 const steps = [
   {
     title: 'Responda o questionário',
@@ -52,12 +58,24 @@ export function HomePage() {
         </div>
 
         <aside className="info-card" aria-labelledby="benefits-title">
-          <h2 id="benefits-title">O que você recebe</h2>
-          <ul className="check-list">
-            {benefits.map((benefit) => (
-              <li key={benefit}>{benefit}</li>
+          <div>
+            <p className="eyebrow">Mapa rápido</p>
+            <h2 id="benefits-title">O que você recebe</h2>
+            <ul className="check-list">
+              {benefits.map((benefit) => (
+                <li key={benefit}>{benefit}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="quick-metrics" aria-label="Resumo do diagnóstico">
+            {quickMetrics.map((metric) => (
+              <div className="quick-metric" key={metric.label}>
+                <strong>{metric.value}</strong>
+                <span>{metric.label}</span>
+              </div>
             ))}
-          </ul>
+          </div>
         </aside>
       </section>
 
