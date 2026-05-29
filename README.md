@@ -110,6 +110,10 @@ A aplicação não exige login e não solicita dados pessoais. As respostas do q
 
 ## Deploy
 
+Aplicação publicada:
+
+- [maturidade-digital.miguelmachado.dev](http://maturidade-digital.miguelmachado.dev/)
+
 O projeto pode ser publicado no Netlify como uma aplicação Vite padrão.
 
 Configurações sugeridas:
