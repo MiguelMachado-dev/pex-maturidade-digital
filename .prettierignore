@@ -1,0 +1,6 @@
+dist
+coverage
+node_modules
+package-lock.json
+plano_implementacao_pex_maturidade_digital.md
+tarefas_implementacao_pex_maturidade_digital.md
